@@ -4,7 +4,8 @@
 #
 require 'pry'
 require 'active_support/all'
-require "readline"
+# require "readline"
+require "rawline"
 
 require_relative "hedgehog/dsl"
 include Hedgehog::DSL

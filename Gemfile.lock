@@ -1,3 +1,9 @@
+PATH
+  remote: /Users/dan2552/Dropbox/projects/rawline
+  specs:
+    rawline (0.3.2)
+      highline (>= 1.7.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,6 +15,7 @@ GEM
     byebug (10.0.2)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
+    highline (1.7.10)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     method_source (0.9.0)
@@ -19,7 +26,6 @@ GEM
     pry-byebug (3.6.0)
       byebug (~> 10.0)
       pry (~> 0.10)
-    rb-readline (0.5.5)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
@@ -29,9 +35,10 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  highline (~> 1.7.2)
   pry
   pry-byebug
-  rb-readline
+  rawline!
 
 BUNDLED WITH
    1.16.3

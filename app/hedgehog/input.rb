@@ -3,7 +3,7 @@ module Hedgehog
     def await_user_input
       @show_prompt = true
       while true
-        command_string = Readline.readline(get_prompt, true)
+        command_string = editor.read(get_prompt, true)
 
         # CMD+D makes nil for some reason
         exit if command_string.nil?
@@ -17,6 +17,10 @@ module Hedgehog
     end
 
     private
+
+    def editor
+      @editor ||= Rawline::Editor.new
+    end
 
     def get_prompt
       if @show_prompt
